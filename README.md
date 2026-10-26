@@ -48,7 +48,7 @@ ENI_POOL_KEY=change-me python3 conol_gateway.py
 curl -s http://127.0.0.1:9999/v1/models -H "Authorization: Bearer change-me"
 ```
 
-Шлюз отдаёт 18 моделей (`gpt-5.6-luna`, `claude-haiku-4-5`, `deepseek-v4-pro`,
+Шлюз отдаёт 19 моделей (`gpt-5.6-luna`, `gpt-6-luna`, `claude-haiku-5-5`, `deepseek-v4-pro`,
 `glm-5.3`, `kimi-k2.7-code`, `grok-4.3`, `qwen3.7-*` и другие) и сам переключается
 на следующий аккаунт при 401/403.
 

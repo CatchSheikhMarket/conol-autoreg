@@ -90,6 +90,8 @@ CONOL_MODEL_MAP = {
     # gpt-6-luna — живьём отвечает exact-token (08.10); с префиксом openai/ НЕ работает.
     "gpt-6-luna": "gpt-6-luna",
     "claude-haiku-4-5": "claude-haiku-4-5",
+    # проверено 26.10 exact-token: SMOKE_OK, без modelDowngraded
+    "claude-haiku-5-5": "claude-haiku-5-5",
     "deepseek-v4-pro": "deepseek/deepseek-v4-pro",
     "deepseek-v4-flash": "deepseek/deepseek-v4-flash",
     "glm-5.2": "z-ai/glm-5.2",
