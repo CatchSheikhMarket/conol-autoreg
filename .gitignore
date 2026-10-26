@@ -1,0 +1,35 @@
+# секреты и рантайм
+config.json
+config.json.bak*
+.env
+.env.*
+!.env.example
+*.session
+secrets*
+credentials*
+data/
+logs/
+debug/
+diag_out/
+*.log
+*.pid
+*.jsonl
+keys.txt
+sessions.txt
+cookies*.json
+*.db
+proxies.txt
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# os
+.DS_Store
+Thumbs.db

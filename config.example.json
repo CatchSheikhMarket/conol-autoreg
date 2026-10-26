@@ -1,0 +1,79 @@
+{
+  "conol": {
+    "base_url": "https://conol.ai",
+    "password": "REPLACE_ME",
+    "site_key": "6Lc3wmAtAAAAAB9YBPXQtT9uGGsH3ul6LQBc5AUu"
+  },
+  "proxies": [
+    "http://user:pass@residential-host-1:8000",
+    "http://user:pass@residential-host-2:8000"
+  ],
+  "proxies_file": "data/proxies.txt",
+  "proxy_check_timeout": 12,
+  "proxy_fail_threshold": 3,
+  "gmail": {
+    "address": "your@gmail.com",
+    "app_password": "REPLACE_ME",
+    "imap_host": "imap.gmail.com",
+    "imap_port": 993
+  },
+  "cdp": {
+    "url": "http://127.0.0.1:9228"
+  },
+  "gateway": {
+    "port": 9999,
+    "api_key": "test",
+    "host": "127.0.0.1"
+  },
+  "registration": {
+    "name_prefix": "Conol",
+    "email_prefix": "yourname+conol",
+    "email_domain": "gmail.com",
+    "starting_credits": 800,
+    "base_delay_sec": 30,
+    "delay_per_account_sec": 15,
+    "verify_timeout_sec": 180
+  },
+  "quests": {
+    "credit_per_quest": 300,
+    "cooldown_between_accounts_sec": 30,
+    "cooldown_between_quests_sec": 15
+  },
+  "paths": {
+    "accounts_file": "data/conol_accounts_pool.jsonl",
+    "cookies_dir": "data",
+    "state_file": "data/conol_pool_state.json",
+    "quest_state_file": "data/conol_quests_state.json",
+    "gateway_state_file": "data/conol_gateway_state.json"
+  },
+  "captcha": {
+    "anticaptcha_keys": [
+      "YOUR_ANTICAPTCHA_KEY"
+    ],
+    "providers": [
+      "chrome_cdp",
+      "anticaptcha"
+    ],
+    "cdp_port": 9228,
+    "headless": false,
+    "display": ":1",
+    "profile_dir": "data/chrome_cdp_profile"
+  },
+  "emails": {
+    "gmail": {
+      "enabled": true
+    },
+    "tonline": {
+      "enabled": true,
+      "creds_file": "/path/to/working_mails.txt",
+      "state_file": "tonline_state.json",
+      "imap_host": "secureimap.t-online.de"
+    },
+    "catchall": {
+      "enabled": true,
+      "api_base": "https://apimail.example.com",
+      "admin_key": "REPLACE_ME",
+      "domain": "mail.example.com"
+    }
+  }
+}
